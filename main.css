@@ -124,8 +124,10 @@ header .button a:hover {
   mix-blend-mode: multiply;
 }
 
-/**
-@media (min-aspect-ratio: 1/1) {
+@media (min-aspect-ratio: 2/1) {
+  body {
+    font-size: 2vw;
+  }
   .decorative-bottom {
     background-size: 100%;
     background-position: 0 55vh;
@@ -136,7 +138,12 @@ header .button a:hover {
     background-position: top center;
   }
 }
-
+@media (min-aspect-ratio: 3/1) {
+  body {
+    font-size: 1vw;
+  }
+}
+/*
 @media (max-aspect-ratio: 1/1) {
   .decorative-top {
     width: 100vh;
@@ -156,7 +163,7 @@ header .button a:hover {
     width: 100vh;
   }
 }
-  */
+*/
 
 /** background animation */
 @-webkit-keyframes BG {
